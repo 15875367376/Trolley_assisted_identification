@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> <!-- 程序可以读取设备外部存储空间 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 允许程序写入外部存储,如SD卡上写文件 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" /> <!-- 4.2以上的手机需要的权限 -->
+    <uses-permission
+        android:name="android.permission.INTERACT_ACROSS_USERS_FULL"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" /> <!-- 访问INTERNET的权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 手机信息 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- ************************************* -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" /> <!-- 在SD卡中创建文件与删除文件权限 -->
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" /> <!-- 传感器 -->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 摄像头权限 -->
+    <uses-permission android:name="com.meilapp.meila.permission.MIPUSH_RECEIVE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:theme"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.Activity.Activity.MainActivity"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <service android:name=".Activity.Activity.Activity.Util.CameraSearchService" />
+
+        <activity
+            android:name=".Activity.Activity.Activity.UIActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Activity.Activity.UIActivity"
+    android:background="@mipmap/home_1">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/home_1"/>
+
+    <TextView
+        android:id="@+id/mTv_ui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:text="Sign UP"
+        android:textColor="@color/font_color"
+        android:textSize="60sp" />
+
+    <RelativeLayout
+        android:id="@+id/shebi_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mTv_ui"
+        android:orientation="vertical"
+        android:layout_marginTop="120dp"
+       >
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="用户名:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:background="@color/cl2"
+            android:layout_marginLeft="40dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/img_1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            />
+        <EditText
+            android:id="@+id/mEt_1"
+            android:layout_marginLeft="120dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/admin"
+            android:hint="请输入用户名"
+            android:background="@drawable/editviewcase"
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mTv_ui"
+        android:orientation="vertical"
+        android:layout_marginTop="180dp"
+
+        >
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="设备ID:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:background="@color/cl2"
+            android:layout_marginLeft="40dp"
+            />
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@mipmap/ic_launcher_round"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            />
+        <EditText
+            android:id="@+id/mEt_2"
+            android:layout_marginLeft="120dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/id"
+            android:hint="请输入设备ID号"
+            android:background="@drawable/editviewcase"
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mRL_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mTv_ui"
+        android:orientation="vertical"
+        android:layout_marginTop="240dp"
+
+        >
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="  密码:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="13dp"
+            android:background="@color/cl2"
+            android:layout_marginLeft="40dp"
+            />
+
+        <EditText
+            android:id="@+id/mEt_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:background="@drawable/editviewcase"
+            android:hint="密码不超过16个字符，可直接点击登录!"
+            android:text="@string/cipher"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/img_2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            />
+        <ImageView
+            android:id="@+id/remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_off"
+            android:layout_marginRight="15dp"
+            android:textSize="18sp"
+            android:text="显示密码"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/mRL_1"
+        >
+
+        <TextView
+            android:id="@+id/mTv_wifi"
+            android:layout_width="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="WiFi 通讯"
+            android:textColor="@color/font_color"
+            android:textSize="30sp"
+            android:background="@mipmap/img_wifi"/>
+
+        <Button
+            android:id="@+id/mBtn_1"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/loginbutton"
+            android:text="Login→"
+            android:textSize="40sp"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="1200dp"
+        android:background="@drawable/home_1"/>
+
+</RelativeLayout>

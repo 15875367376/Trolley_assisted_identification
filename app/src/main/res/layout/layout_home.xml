@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_zd"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:background="@drawable/home_btn1"
+            android:text="自动驾驶"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:id="@+id/btn_cq"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:background="@drawable/home_btn1"
+            android:text="重启动标志位"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

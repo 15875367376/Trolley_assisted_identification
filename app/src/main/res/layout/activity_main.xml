@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Activity.Activity.MainActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/black" />
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="500dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            app:srcCompat="@color/line" />
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_below="@+id/tv_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_below="@+id/tv_1"
+                android:layout_width="300dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                app:srcCompat="@color/line" />
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@mipmap/icon_2"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/black" />
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:srcCompat="@color/line" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/showip"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/img"
+        android:layout_marginLeft="336dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:lines="2"
+        android:text="请重启设备！"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <Button
+        android:layout_below="@+id/img"
+        android:id="@+id/button"
+        android:layout_width="160dp"
+        android:layout_height="75dp"
+        android:layout_weight="0.1"
+        android:text="刷新实时画面"
+        android:textSize="18sp"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/home_btn1"/>
+
+    <ScrollView
+        android:id="@+id/img_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/showip"
+        android:background="@color/Pink"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Pink"
+            android:gravity="center_horizontal"
+            android:text="······"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/line4"
+        android:layout_below="@+id/img_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/Btn_1"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:text="启动"
+            android:textSize="20sp"
+            android:layout_marginLeft="80dp"
+            android:textColor="@color/black"
+            android:background="@mipmap/qidon_1"/>
+
+        <Button
+            android:id="@+id/Btn_2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="红绿灯识别"
+            android:textSize="20sp"
+            android:layout_marginLeft="80dp"
+            android:textColor="@color/black"
+            android:background="@mipmap/icon_traffic_light"/>
+
+        <Button
+            android:id="@+id/Btn_3"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:text="车牌识别"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="80dp"
+            android:background="@mipmap/icon_plate"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/Btn_4"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:text="二维码识别"
+            android:textSize="20sp"
+            android:layout_marginLeft="80dp"
+            android:textColor="@color/black"
+            android:background="@mipmap/icon_qr"/>
+
+        <Button
+            android:id="@+id/Btn_5"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="文字识别"
+            android:textSize="20sp"
+            android:layout_marginLeft="80dp"
+            android:textColor="@color/black"
+            android:background="@mipmap/icon_ocr"/>
+
+        <Button
+            android:id="@+id/Btn_6"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:text="交通标志物识别"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="80dp"
+            android:background="@mipmap/icon_traffic_data"/>
+
+    </LinearLayout>
+
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/pager"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:background="@color/line"-->
+<!--        android:layout_below="@+id/img_1">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/Tv_home"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="主页"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@color/thirdColor"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/Tv_light"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="交通灯"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@color/thirdColor"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/Tv_qr"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="二维码"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@color/thirdColor"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/Tv_plate_number"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="车牌"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@color/thirdColor"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/Tv_image"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="图像"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@color/thirdColor"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/Tv_voice"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="语音"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@color/thirdColor"/>-->
+<!--    </LinearLayout>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/srcollbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:layout_below="@+id/pager"-->
+<!--        android:scaleType="matrix"-->
+<!--        android:src="@mipmap/slide"/>-->
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/ViewPager"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/srcollbar"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="2dp"-->
+<!--        android:layout_marginTop="-2dp"-->
+<!--        android:layout_marginBottom="2dp"></androidx.viewpager.widget.ViewPager>-->
+
+
+</RelativeLayout>

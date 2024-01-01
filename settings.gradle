@@ -1,0 +1,52 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+
+    }
+}
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+        google()
+        maven {
+            url 'https://jitpack.io'
+        }
+
+    }
+}
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+        google()
+        maven {
+            url 'https://developer.huawei.com/repo/'
+        }
+    }
+}
+//dependencyResolutionManagement{
+//    repositories {
+//        // 添加百度飞桨的SDK路径
+//        flatDir {
+//            dirs '"D://HelloWord//EasyDL"'
+//        }
+//    }
+//}
+
+
+rootProject.name = "Trolley_assisted_identification"
+include ':app'
+include ':opencv'
+include ':camera_ui'
+
+
+include ':openCVLibrary330'
+include ':hyperlpr3'
